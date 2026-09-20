@@ -3,4 +3,6 @@ packages:
 
 autoInstallPeers: true
 allowBuilds:
+  esbuild: true
   nx: true
+  sharp: true
