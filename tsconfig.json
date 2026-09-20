@@ -10,9 +10,6 @@
       "path": "./apps/travel-planner-react"
     },
     {
-      "path": "./apps/travel-planner-react-e2e"
-    },
-    {
       "path": "./apps/travel-planner-vue-e2e"
     },
     {
