@@ -2,5 +2,33 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./apps/travel-planner-react-e2e"
+    },
+    {
+      "path": "./apps/travel-planner-react"
+    },
+    {
+      "path": "./apps/travel-planner-react-e2e"
+    },
+    {
+      "path": "./apps/travel-planner-vue-e2e"
+    },
+    {
+      "path": "./apps/travel-planner-vue"
+    },
+    {
+      "path": "./apps/travel-planner-next-e2e"
+    },
+    {
+      "path": "./apps/travel-planner-next"
+    },
+    {
+      "path": "./apps/travel-planner-nuxt-e2e"
+    },
+    {
+      "path": "./apps/travel-planner-nuxt"
+    }
+  ]
 }

@@ -1,8 +1,11 @@
 packages:
   - 'packages/*'
-
+  - 'apps/*'
 autoInstallPeers: true
 allowBuilds:
   esbuild: true
   nx: true
   sharp: true
+  '@swc/core': false
+  cypress: true
+  unrs-resolver: true

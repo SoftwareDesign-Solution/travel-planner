@@ -1,0 +1,10 @@
+{
+  "name": "@travel-planner/travel-planner-nuxt-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@travel-planner/travel-planner-nuxt"
+    ]
+  }
+}
