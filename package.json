@@ -64,9 +64,11 @@
     "vue-tsc": "^2.2.8"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.9.1",
     "next": "~16.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.88.0",
     "react-router-dom": "6.30.3",
     "tailwindcss": "^4.3.3",
     "vue": "^3.5.13",
