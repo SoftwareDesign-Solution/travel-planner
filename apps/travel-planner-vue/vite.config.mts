@@ -1,19 +1,34 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
 
 export default defineConfig(() => ({
   root: import.meta.dirname,
   cacheDir: '../../node_modules/.vite/apps/travel-planner-vue',
+  resolve: {
+    alias: {
+      "@": path.resolve(import.meta.dirname, "../"),
+    },
+  },
   server: {
     port: 4200,
     host: 'localhost',
+    watch: {
+      ignored: [
+        '**/mock-api/**'
+      ]
+    }
   },
   preview: {
     port: 4300,
     host: 'localhost',
   },
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    tailwindcss()
+  ],
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [],
