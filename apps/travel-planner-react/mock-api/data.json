@@ -1,0 +1,258 @@
+{
+  "users": [],
+  "destinations": [
+    {
+      "id": 1,
+      "slug": "lissabon-pt",
+      "title": "Lissabon",
+      "description": "Historische Straßenbahnen, farbenfrohe Häuser und Aussichtspunkte über den Tejo machen Lissabon zum idealen Ziel für einen abwechslungsreichen Städtetrip.",
+      "country": "Portugal",
+      "saison": "Frühling",
+      "tags": ["Städtereise", "Kultur", "Kulinarik", "Meer"],
+      "price": "ab 749 €",
+      "duration": "5 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 3,5 h", "language": "Portugiesisch",
+        "monthlyRatings": [3, 3, 4, 5, 5, 4, 3, 3, 5, 5, 4, 3],
+        "priceDescription": "Flug, Unterkunft und Nahverkehr für 5 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "220 €"}, {"label": "Unterkunft / Nacht", "value": "95 €"}, {"label": "Nahverkehr / Tag", "value": "7 €"}, {"label": "Essen / Tag", "value": "35 €"}],
+        "coordinates": {"latitude": 38.7223, "longitude": -9.1393},
+        "highlights": [{"title": "Alfama", "description": "Enge Gassen, kleine Plätze und traditionelle Fado-Lokale.", "imageUrl": "https://loremflickr.com/800/600/lisbon,alfama?lock=101"}, {"title": "Belém", "description": "Historische Bauwerke direkt am Ufer des Tejo.", "imageUrl": "https://loremflickr.com/800/600/lisbon,belem,tower?lock=102"}, {"title": "Tram 28", "description": "Die berühmte Straßenbahn durch Lissabons alte Viertel.", "imageUrl": "https://loremflickr.com/800/600/lisbon,yellow,tram?lock=103"}],
+        "similarDestinationIds": [9, 12, 6]
+      }
+    },
+    {
+      "id": 2,
+      "slug": "amalfikueste-it",
+      "title": "Amalfiküste",
+      "description": "Spektakuläre Küstenstraßen, kleine Bergdörfer und das tiefblaue Mittelmeer erwarten dich an einer der schönsten Küstenregionen Italiens.",
+      "country": "Italien",
+      "saison": "Sommer",
+      "tags": ["Strand", "Roadtrip", "Kulinarik", "Romantik"],
+      "price": "ab 1.249 €",
+      "duration": "8 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 2,5 h", "language": "Italienisch",
+        "monthlyRatings": [1, 1, 2, 3, 5, 5, 4, 4, 5, 4, 2, 1],
+        "priceDescription": "Flug, Unterkunft und Mietwagen für 8 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "250 €"}, {"label": "Unterkunft / Nacht", "value": "145 €"}, {"label": "Mietwagen / Tag", "value": "55 €"}, {"label": "Essen / Tag", "value": "45 €"}],
+        "coordinates": {"latitude": 40.6333, "longitude": 14.6029},
+        "highlights": [{"title": "Positano", "description": "Pastellfarbene Häuser an einem steilen Küstenhang.", "imageUrl": "https://loremflickr.com/800/600/positano,amalfi,coast?lock=201"}, {"title": "Amalfi", "description": "Historischer Küstenort mit eindrucksvollem Dom.", "imageUrl": "https://loremflickr.com/800/600/amalfi,cathedral?lock=202"}, {"title": "Sentiero degli Dei", "description": "Panoramaweg hoch über dem Mittelmeer.", "imageUrl": "https://loremflickr.com/800/600/amalfi,coast,hiking?lock=203"}],
+        "similarDestinationIds": [10, 1, 5]
+      }
+    },
+    {
+      "id": 3,
+      "slug": "reykjavik-suedisland-is",
+      "title": "Reykjavík und Südisland",
+      "description": "Entdecke Wasserfälle, schwarze Strände, Geysire und heiße Quellen auf einer Rundreise durch Islands beeindruckende Vulkanlandschaft.",
+      "country": "Island",
+      "saison": "Winter",
+      "tags": ["Natur", "Roadtrip", "Nordlichter", "Abenteuer"],
+      "price": "ab 1.699 €",
+      "duration": "7 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1504829857797-ddff29c27927?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 3,5 h", "language": "Isländisch",
+        "monthlyRatings": [4, 4, 3, 3, 4, 5, 5, 5, 4, 4, 4, 4],
+        "priceDescription": "Flug, Unterkunft und Mietwagen für 7 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "380 €"}, {"label": "Unterkunft / Nacht", "value": "170 €"}, {"label": "Mietwagen / Tag", "value": "85 €"}, {"label": "Essen / Tag", "value": "55 €"}],
+        "coordinates": {"latitude": 64.1466, "longitude": -21.9426},
+        "highlights": [{"title": "Golden Circle", "description": "Geysire, Wasserfälle und der Nationalpark Þingvellir.", "imageUrl": "https://loremflickr.com/800/600/iceland,golden,circle,geyser?lock=301"}, {"title": "Reynisfjara", "description": "Schwarzer Lavastrand mit mächtigen Basaltsäulen.", "imageUrl": "https://loremflickr.com/800/600/reynisfjara,black,beach?lock=302"}, {"title": "Skógafoss", "description": "Einer der eindrucksvollsten Wasserfälle Südislands.", "imageUrl": "https://loremflickr.com/800/600/skogafoss,waterfall?lock=303"}],
+        "similarDestinationIds": [7, 11, 8]
+      }
+    },
+    {
+      "id": 4,
+      "slug": "kyoto-jp",
+      "title": "Kyoto",
+      "description": "Alte Tempel, traditionelle Gärten und Teehäuser prägen die frühere Kaiserstadt inmitten bewaldeter Hügel. Zur Kirschblüte im April ist Kyoto besonders eindrucksvoll, aber auch am vollsten und teuersten.",
+      "country": "Japan",
+      "saison": "Frühling",
+      "tags": ["Kultur", "Tempel", "Kirschblüte", "Kulinarik"],
+      "price": "ab 2.399 €",
+      "duration": "7–10 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 13 h", "language": "Japanisch",
+        "monthlyRatings": [1, 1, 3, 5, 4, 2, 1, 1, 3, 4, 5, 2],
+        "priceDescription": "Flug, Unterkunft und Bahnpass für 7–10 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "1.100 €"}, {"label": "Unterkunft / Nacht", "value": "140 €"}, {"label": "Bahnpass 7 Tage", "value": "320 €"}, {"label": "Essen / Tag", "value": "45 €"}],
+        "coordinates": {"latitude": 35.0116, "longitude": 135.7681},
+        "highlights": [{"title": "Fushimi Inari", "description": "Tausende Torii-Tore am Berghang, früh morgens noch angenehm leer.", "imageUrl": "https://loremflickr.com/800/600/fushimi,inari,torii?lock=401"}, {"title": "Arashiyama", "description": "Bambuswald und Affenpark am westlichen Stadtrand.", "imageUrl": "https://loremflickr.com/800/600/arashiyama,bamboo,forest?lock=402"}, {"title": "Kiyomizu-dera", "description": "Berühmte Holzterrasse über der Stadt und UNESCO-Welterbe.", "imageUrl": "https://loremflickr.com/800/600/kiyomizu,dera,kyoto?lock=403"}],
+        "similarDestinationIds": [5, 6, 12]
+      }
+    },
+    {
+      "id": 5,
+      "slug": "bali-id",
+      "title": "Bali",
+      "description": "Reisterrassen, hinduistische Tempel, tropische Strände und lebendige Märkte verbinden Entspannung mit eindrucksvollen Erlebnissen.",
+      "country": "Indonesien",
+      "saison": "Sommer",
+      "tags": ["Strand", "Natur", "Wellness", "Kultur"],
+      "price": "ab 1.899 €",
+      "duration": "14 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 16 h", "language": "Indonesisch",
+        "monthlyRatings": [3, 3, 3, 4, 5, 5, 5, 5, 5, 4, 3, 3],
+        "priceDescription": "Flug, Unterkunft und Transfers für 14 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "950 €"}, {"label": "Unterkunft / Nacht", "value": "70 €"}, {"label": "Transfers / Tag", "value": "20 €"}, {"label": "Essen / Tag", "value": "25 €"}],
+        "coordinates": {"latitude": -8.4095, "longitude": 115.1889},
+        "highlights": [{"title": "Ubud", "description": "Künstlerstadt zwischen Tempeln und Reisterrassen.", "imageUrl": "https://loremflickr.com/800/600/ubud,bali,temple?lock=501"}, {"title": "Uluwatu", "description": "Meerestempel auf einer steilen Klippe.", "imageUrl": "https://loremflickr.com/800/600/uluwatu,temple,cliff?lock=502"}, {"title": "Tegallalang", "description": "Leuchtend grüne Reisterrassen nördlich von Ubud.", "imageUrl": "https://loremflickr.com/800/600/tegallalang,rice,terrace?lock=503"}],
+        "similarDestinationIds": [10, 2, 8]
+      }
+    },
+    {
+      "id": 6,
+      "slug": "new-york-city-us",
+      "title": "New York City",
+      "description": "Wolkenkratzer, Broadway, Central Park und vielfältige Stadtviertel sorgen rund um die Uhr für neue Eindrücke in der Metropole am Hudson River.",
+      "country": "USA",
+      "saison": "Herbst",
+      "tags": ["Städtereise", "Shopping", "Kultur", "Nachtleben"],
+      "price": "ab 1.399 €",
+      "duration": "7 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 9 h", "language": "Englisch",
+        "monthlyRatings": [2, 2, 3, 4, 5, 4, 3, 3, 5, 5, 4, 4],
+        "priceDescription": "Flug, Unterkunft und Nahverkehr für 7 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "650 €"}, {"label": "Unterkunft / Nacht", "value": "210 €"}, {"label": "Metro 7 Tage", "value": "35 €"}, {"label": "Essen / Tag", "value": "60 €"}],
+        "coordinates": {"latitude": 40.7128, "longitude": -74.006},
+        "highlights": [{"title": "Manhattan", "description": "Wolkenkratzer, Broadway und berühmte Stadtviertel.", "imageUrl": "https://loremflickr.com/800/600/manhattan,skyline?lock=601"}, {"title": "Central Park", "description": "Grüne Oase mitten in der dicht bebauten Metropole.", "imageUrl": "https://loremflickr.com/800/600/central,park,new,york?lock=602"}, {"title": "Brooklyn", "description": "Promenade, Brownstones und Blick auf die Skyline.", "imageUrl": "https://loremflickr.com/800/600/brooklyn,bridge,skyline?lock=603"}],
+        "similarDestinationIds": [12, 1, 4]
+      }
+    },
+    {
+      "id": 7,
+      "slug": "norwegische-fjorde-no",
+      "title": "Norwegische Fjorde",
+      "description": "Tiefe Fjorde, steile Berghänge und kleine Küstenorte bieten ideale Bedingungen für Wanderungen und ausgedehnte Touren durch die Natur.",
+      "country": "Norwegen",
+      "saison": "Sommer",
+      "tags": ["Natur", "Wandern", "Roadtrip", "Fjorde"],
+      "price": "ab 1.549 €",
+      "duration": "10 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1520769669658-f07657f5a307?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 2 h", "language": "Norwegisch",
+        "monthlyRatings": [1, 1, 2, 3, 4, 5, 5, 5, 4, 2, 1, 1],
+        "priceDescription": "Flug, Unterkunft und Mietwagen für 10 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "280 €"}, {"label": "Unterkunft / Nacht", "value": "135 €"}, {"label": "Mietwagen / Tag", "value": "75 €"}, {"label": "Essen / Tag", "value": "50 €"}],
+        "coordinates": {"latitude": 61.5539, "longitude": 6.9496},
+        "highlights": [{"title": "Geirangerfjord", "description": "Steile Felswände und Wasserfälle entlang des Fjords.", "imageUrl": "https://loremflickr.com/800/600/geirangerfjord,norway?lock=701"}, {"title": "Preikestolen", "description": "Markante Felskanzel hoch über dem Lysefjord.", "imageUrl": "https://loremflickr.com/800/600/preikestolen,lysefjord?lock=702"}, {"title": "Flåmbahn", "description": "Spektakuläre Bahnstrecke durch das Gebirge.", "imageUrl": "https://loremflickr.com/800/600/flam,railway,norway?lock=703"}],
+        "similarDestinationIds": [3, 11, 12]
+      }
+    },
+    {
+      "id": 8,
+      "slug": "kapstadt-za",
+      "title": "Kapstadt",
+      "description": "Zwischen Tafelberg und Atlantik verbindet Kapstadt eindrucksvolle Landschaften, ausgezeichnete Weingüter und lebendige Stadtviertel.",
+      "country": "Südafrika",
+      "saison": "Winter",
+      "tags": ["Städtereise", "Natur", "Wein", "Strand"],
+      "price": "ab 1.999 €",
+      "duration": "12 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 12 h", "language": "Englisch und Afrikaans",
+        "monthlyRatings": [5, 5, 5, 4, 3, 3, 3, 3, 4, 4, 5, 5],
+        "priceDescription": "Flug, Unterkunft und Mietwagen für 12 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "850 €"}, {"label": "Unterkunft / Nacht", "value": "100 €"}, {"label": "Mietwagen / Tag", "value": "40 €"}, {"label": "Essen / Tag", "value": "30 €"}],
+        "coordinates": {"latitude": -33.9249, "longitude": 18.4241},
+        "highlights": [{"title": "Tafelberg", "description": "Panoramablick über Stadt, Küste und Atlantik.", "imageUrl": "https://loremflickr.com/800/600/table,mountain,cape,town?lock=801"}, {"title": "Kap-Halbinsel", "description": "Küstenstraße, Strände und das Kap der Guten Hoffnung.", "imageUrl": "https://loremflickr.com/800/600/cape,good,hope,south,africa?lock=802"}, {"title": "Winelands", "description": "Weingüter und historische Orte rund um Stellenbosch.", "imageUrl": "https://loremflickr.com/800/600/stellenbosch,vineyard?lock=803"}],
+        "similarDestinationIds": [5, 10, 11]
+      }
+    },
+    {
+      "id": 9,
+      "slug": "marrakesch-ma",
+      "title": "Marrakesch",
+      "description": "Orientalische Paläste, farbenfrohe Souks und duftende Gewürze prägen das besondere Flair der marokkanischen Königsstadt.",
+      "country": "Marokko",
+      "saison": "Herbst",
+      "tags": ["Kultur", "Städtereise", "Kulinarik", "Märkte"],
+      "price": "ab 649 €",
+      "duration": "5 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 4 h", "language": "Arabisch und Französisch",
+        "monthlyRatings": [4, 4, 5, 5, 4, 3, 2, 2, 4, 5, 5, 4],
+        "priceDescription": "Flug, Riad und Transfers für 5 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "250 €"}, {"label": "Riad / Nacht", "value": "75 €"}, {"label": "Transfers gesamt", "value": "40 €"}, {"label": "Essen / Tag", "value": "25 €"}],
+        "coordinates": {"latitude": 31.6295, "longitude": -7.9811},
+        "highlights": [{"title": "Medina", "description": "Lebhafte Gassen, Werkstätten und traditionelle Souks.", "imageUrl": "https://loremflickr.com/800/600/marrakech,medina,souk?lock=901"}, {"title": "Jardin Majorelle", "description": "Farbenprächtiger Garten mit exotischen Pflanzen.", "imageUrl": "https://loremflickr.com/800/600/jardin,majorelle?lock=902"}, {"title": "Bahia-Palast", "description": "Aufwendig verzierte Höfe und Räume aus dem 19. Jahrhundert.", "imageUrl": "https://loremflickr.com/800/600/bahia,palace,marrakech?lock=903"}],
+        "similarDestinationIds": [1, 12, 2]
+      }
+    },
+    {
+      "id": 10,
+      "slug": "kreta-gr",
+      "title": "Kreta",
+      "description": "Weite Sandstrände, felsige Buchten, antike Stätten und traditionelle Tavernen machen die größte griechische Insel besonders vielseitig.",
+      "country": "Griechenland",
+      "saison": "Sommer",
+      "tags": ["Strand", "Insel", "Kultur", "Familie"],
+      "price": "ab 899 €",
+      "duration": "9 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1504512485720-7d83a16ee930?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 3 h", "language": "Griechisch",
+        "monthlyRatings": [1, 1, 2, 3, 4, 5, 5, 5, 5, 5, 3, 1],
+        "priceDescription": "Flug, Unterkunft und Mietwagen für 9 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "300 €"}, {"label": "Unterkunft / Nacht", "value": "85 €"}, {"label": "Mietwagen / Tag", "value": "40 €"}, {"label": "Essen / Tag", "value": "35 €"}],
+        "coordinates": {"latitude": 35.2401, "longitude": 24.8093},
+        "highlights": [{"title": "Chania", "description": "Venezianischer Hafen und verwinkelte Altstadtgassen.", "imageUrl": "https://loremflickr.com/800/600/chania,venetian,harbour?lock=1001"}, {"title": "Samaria-Schlucht", "description": "Lange Wanderung durch eine eindrucksvolle Felslandschaft.", "imageUrl": "https://loremflickr.com/800/600/samaria,gorge,crete?lock=1002"}, {"title": "Elafonisi", "description": "Flache Lagune mit hellem, teilweise rosafarbenem Sand.", "imageUrl": "https://loremflickr.com/800/600/elafonisi,beach,crete?lock=1003"}],
+        "similarDestinationIds": [2, 5, 1]
+      }
+    },
+    {
+      "id": 11,
+      "slug": "patagonien-ar",
+      "title": "Patagonien",
+      "description": "Gletscher, türkisfarbene Seen und schroffe Bergmassive machen die abgelegene Region im Süden Südamerikas zu einem außergewöhnlichen Wanderziel.",
+      "country": "Argentinien",
+      "saison": "Winter",
+      "tags": ["Abenteuer", "Wandern", "Natur", "Berge"],
+      "price": "ab 3.299 €",
+      "duration": "16 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 18 h", "language": "Spanisch",
+        "monthlyRatings": [5, 5, 4, 3, 2, 1, 1, 1, 2, 3, 4, 5],
+        "priceDescription": "Flug, Unterkunft und Transfers für 16 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "1.350 €"}, {"label": "Unterkunft / Nacht", "value": "95 €"}, {"label": "Transfers gesamt", "value": "450 €"}, {"label": "Essen / Tag", "value": "40 €"}],
+        "coordinates": {"latitude": -49.3315, "longitude": -72.8863},
+        "highlights": [{"title": "Perito-Moreno-Gletscher", "description": "Gewaltige Eiswand im Nationalpark Los Glaciares.", "imageUrl": "https://loremflickr.com/800/600/perito,moreno,glacier?lock=1101"}, {"title": "Fitz Roy", "description": "Markantes Bergmassiv oberhalb von El Chaltén.", "imageUrl": "https://loremflickr.com/800/600/fitz,roy,patagonia?lock=1102"}, {"title": "Torres del Paine", "description": "Legendäre Wanderlandschaft im chilenischen Teil Patagoniens.", "imageUrl": "https://loremflickr.com/800/600/torres,del,paine?lock=1103"}],
+        "similarDestinationIds": [3, 7, 8]
+      }
+    },
+    {
+      "id": 12,
+      "slug": "edinburgh-gb",
+      "title": "Edinburgh",
+      "description": "Eine imposante Burg, mittelalterliche Gassen und gemütliche Pubs verleihen der schottischen Hauptstadt ihren unverwechselbaren Charakter.",
+      "country": "Schottland",
+      "saison": "Herbst",
+      "tags": ["Städtereise", "Geschichte", "Kultur", "Architektur"],
+      "price": "ab 699 €",
+      "duration": "4 Tage",
+      "imageUrl": "https://images.unsplash.com/photo-1506377585622-bedcbb027afc?auto=format&fit=crop&w=1600&q=85",
+      "details": {
+        "flightTime": "ca. 2 h", "language": "Englisch",
+        "monthlyRatings": [2, 2, 3, 4, 4, 5, 5, 5, 4, 3, 3, 4],
+        "priceDescription": "Flug, Unterkunft und Nahverkehr für 4 Tage",
+        "costs": [{"label": "Flug (retour)", "value": "190 €"}, {"label": "Unterkunft / Nacht", "value": "120 €"}, {"label": "Nahverkehr / Tag", "value": "6 €"}, {"label": "Essen / Tag", "value": "40 €"}],
+        "coordinates": {"latitude": 55.9533, "longitude": -3.1883},
+        "highlights": [{"title": "Edinburgh Castle", "description": "Historische Festung auf einem erloschenen Vulkanfelsen.", "imageUrl": "https://loremflickr.com/800/600/edinburgh,castle?lock=1201"}, {"title": "Royal Mile", "description": "Lebendige Altstadtstraße zwischen Burg und Holyrood Palace.", "imageUrl": "https://loremflickr.com/800/600/royal,mile,edinburgh?lock=1202"}, {"title": "Arthur’s Seat", "description": "Aussichtsreicher Stadtberg mitten im Holyrood Park.", "imageUrl": "https://loremflickr.com/800/600/arthurs,seat,edinburgh?lock=1203"}],
+        "similarDestinationIds": [1, 6, 7]
+      }
+    }
+  ],
+  "wishlist": []
+}
