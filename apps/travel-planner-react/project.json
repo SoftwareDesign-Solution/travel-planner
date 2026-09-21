@@ -1,0 +1,28 @@
+{
+  "name": "@travel-planner/travel-planner-react",
+  "projectType": "application",
+  "sourceRoot": "apps/travel-planner-react/src",
+  "targets": {
+    "api": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "json-server-auth --watch mock-api/data.json --routes mock-api/routes.json --port 3002",
+        "cwd": "apps/travel-planner-react"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "pnpm nx run @travel-planner/travel-planner-react:serve"
+          },
+          {
+            "command": "pnpm nx run @travel-planner/travel-planner-react:api"
+          }
+        ],
+        "parallel": true
+      }
+    }
+  }
+}
