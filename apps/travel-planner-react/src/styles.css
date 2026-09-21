@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Public Sans", system-ui, sans-serif;
+  --font-display: "Instrument Serif", serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-paper: oklch(0.965 0.012 85);
+  --color-shell: oklch(0.93 0.012 85);
+  --color-line: oklch(0.89 0.012 85);
+  --color-field: oklch(0.85 0.012 85);
+  --color-ink: oklch(0.24 0.02 250);
+  --color-ink-soft: oklch(0.46 0.02 250);
+  --color-ink-mute: oklch(0.5 0.02 250);
+
+  --color-coral: oklch(0.55 0.13 15);
+  --color-coral-deep: oklch(0.48 0.13 15);
+  --color-coral-dark: oklch(0.5 0.11 15);
+  --color-coral-soft: oklch(0.85 0.09 15);
+  --color-teal: oklch(0.55 0.13 170);
+  --color-teal-ink: oklch(0.35 0.09 170);
+  --color-teal-soft: oklch(0.95 0.03 170);
+  --color-teal-line: oklch(0.8 0.05 170);
+  --color-teal-dark: oklch(0.42 0.09 170);
+  --color-slot: oklch(0.88 0.02 170);
+  --color-slot-alt: oklch(0.84 0.02 170);
+
+  /* Fehlermeldungen */
+  --color-error: oklch(0.55 0.19 25);
+  --color-error-deep: oklch(0.48 0.19 25);
+  --color-error-soft: oklch(0.95 0.045 25);
+  --color-error-line: oklch(0.78 0.1 25);
+
+}
+@utility label-cap { @apply text-[11px] font-semibold uppercase tracking-[0.08em] text-ink-mute; }
+@utility field { @apply w-full rounded-lg border border-field bg-white px-3.5 py-3 text-[15px] text-ink outline-none focus:border-teal; }
+@utility btn-primary { @apply rounded-lg bg-coral px-4 py-2.5 text-[13px] font-semibold text-white hover:bg-coral-deep; }
+@utility btn-ghost { @apply rounded-lg border border-field bg-white px-4 py-2.5 text-[13px] font-medium text-ink hover:border-ink-mute; }
+@utility chip { @apply cursor-pointer rounded-full border border-line bg-white px-3 py-1.5 text-[13px] font-medium text-ink hover:border-teal-line hover:text-teal-ink; }
+@utility tag { @apply rounded-full bg-teal-soft px-2.5 py-1 text-[11.5px] font-medium text-teal-ink; }
+@utility slot { @apply flex items-center justify-center bg-[repeating-linear-gradient(135deg,var(--color-slot)_0_10px,var(--color-slot-alt)_10px_20px)]; }
+
+/* Fehler-Zustand für .field, z.B. bei nicht befüllten Pflichtfeldern:
+   zusätzlich zur bestehenden Klasse "field" auf dasselbe Element setzen
+   → <input class="field field-error" ...>. Muss nach @utility field stehen,
+   damit border-color/focus:border-color hier gewinnen (gleiche Spezifität,
+   Reihenfolge in der Stylesheet-Quelle entscheidet bei Tailwind v4 @utility). */
+@utility field-error { @apply border-error bg-error-soft/40 focus:border-error; }
+@utility error-msg { @apply mt-1.5 flex items-center gap-1 text-[12.5px] font-medium text-error-deep; }
+@utility btn-primary { @apply rounded-lg bg-coral px-4 py-2.5 text-[13px] font-semibold text-white hover:bg-coral-deep; }
+@utility btn-ghost { @apply rounded-lg border border-field bg-white px-4 py-2.5 text-[13px] font-medium text-ink hover:border-ink-mute; }
+/* Für Retry-Buttons in Fehler-Zuständen (Fetch-Fehler etc.) — gleiches Muster wie btn-primary, nur mit den Error-Farben. */
+@utility btn-error { @apply rounded-lg bg-error px-4 py-2.5 text-[13px] font-semibold text-white hover:bg-error-deep; }
+
+body {
+    @apply bg-shell font-sans text-ink
+}
