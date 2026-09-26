@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <h1>travel-planner-vue</h1>
+  <RouterView />
 </template>
 
 <style scoped lang="css">
