@@ -1,8 +1,10 @@
 <script setup lang="ts">
 /* Imports */
-import { computed, onMounted, reactive } from 'vue'
+import { computed, onMounted, reactive, ref } from 'vue'
 
 import DestinationCard from '../../../components/DestinationCard.vue';
+import DestinationFilter from '../../../components/DestinationFilter.vue';
+import { useDestinationFilter } from '../../../composables/use-destination-filter.js';
 import { getErrorMessage } from '../../../utils/get-error-message.js';
 import { useDestinationsQuery } from '../composables/use-destinations-query.js';
 import { Destination } from '../schemas/destination.schema';
@@ -29,6 +31,17 @@ const {
   asyncStatus: destinationsAsyncStatus,
   refetch: refetchDestinations,
 } = useDestinationsQuery();
+
+const {
+  searchTerm,
+  selectedSeason,
+  selectedTags,
+  sortField,
+  sortDirection,
+  seasons,
+  tags,
+  filteredDestinations,
+} = useDestinationFilter(destinations);
 
 /* State */
 // BASIC: Destinations 
@@ -73,29 +86,15 @@ onMounted(async () => {
       </div>
     </div>
 
-    <div class="flex flex-wrap gap-2">
-      <button class="chip">
-        culture
-      </button><button class="chip">
-        history
-      </button><button class="chip">
-        temples
-      </button>
-      <button class="chip">
-        beach
-      </button><button class="chip">
-        islands
-      </button><button class="chip">
-        hiking
-      </button>
-      <button class="chip">
-        mountains
-      </button><button class="chip">
-        luxury
-      </button><button class="chip">
-        skiing
-      </button>
-    </div>
+    <DestinationFilter
+      v-model:search-term="searchTerm"
+      v-model:selected-season="selectedSeason"
+      v-model:selected-tags="selectedTags"
+      v-model:sort-field="sortField"
+      v-model:sort-direction="sortDirection"
+      :seasons="seasons"
+      :tags="tags"
+    />
 
     <!-- Initialer Ladezustand -->
     <section 
@@ -133,10 +132,10 @@ onMounted(async () => {
 
     <!-- Ergebnis -->
     <section v-else-if="destinationsStatus === 'success'">
-      <p>
-        {{ destinations?.length ?? 0 }}
+      <p class="mb-5">
+        {{ filteredDestinations?.length ?? 0 }}
         {{
-          destinations?.length === 1
+          filteredDestinations?.length === 1
             ? 'Reiseziel gefunden'
             : 'Reiseziele gefunden'
         }}
@@ -144,7 +143,7 @@ onMounted(async () => {
 
       <div class="grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-5">
         <DestinationCard
-          v-for="destination in destinations"
+          v-for="destination in filteredDestinations"
           :key="destination.id"
           :destination="destination"
         >
