@@ -67,7 +67,7 @@ export function useDestinationFilter<
     );
   });
 
-    const filteredDestinations = computed<T[]>(() => {
+  const filteredDestinations = computed<T[]>(() => {
     const normalizedSearchTerm =
       searchTerm.value
         .trim()
@@ -87,7 +87,11 @@ export function useDestinationFilter<
             .toLocaleLowerCase('de')
             .includes(normalizedSearchTerm);
 
-        return matchesSearch;
+        const matchesSeason =
+          selectedSeason.value === '' ||
+          destination.season === selectedSeason.value;
+
+        return matchesSearch && matchesSeason;
       }) ?? [];
 
     return [...filteredEntries];
