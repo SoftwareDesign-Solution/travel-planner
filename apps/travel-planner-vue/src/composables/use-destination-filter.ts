@@ -67,8 +67,30 @@ export function useDestinationFilter<
     );
   });
 
-  const filteredDestinations = computed<T[]>(() => {
-    return [...(toValue(destinations) ?? [])];
+    const filteredDestinations = computed<T[]>(() => {
+    const normalizedSearchTerm =
+      searchTerm.value
+        .trim()
+        .toLocaleLowerCase('de');
+
+    const filteredEntries =
+      toValue(destinations)?.filter((destination) => {
+        const matchesSearch =
+          normalizedSearchTerm === '' ||
+          destination.title
+            .toLocaleLowerCase('de')
+            .includes(normalizedSearchTerm) ||
+          destination.description
+            .toLocaleLowerCase('de')
+            .includes(normalizedSearchTerm) ||
+          destination.country
+            .toLocaleLowerCase('de')
+            .includes(normalizedSearchTerm);
+
+        return matchesSearch;
+      }) ?? [];
+
+    return [...filteredEntries];
   });
 
   return {
