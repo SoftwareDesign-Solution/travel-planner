@@ -91,11 +91,50 @@ export function useDestinationFilter<
           selectedSeason.value === '' ||
           destination.season === selectedSeason.value;
 
-        return matchesSearch && matchesSeason;
+        const matchesTags =
+          selectedTags.value.length === 0 ||
+          selectedTags.value.some((selectedTag) =>
+            destination.tags.includes(selectedTag),
+          );
+
+        return (
+          matchesSearch &&
+          matchesSeason &&
+          matchesTags
+        );
       }) ?? [];
 
     return [...filteredEntries];
   });
+
+  /* Functions */
+  function selectTag(tag: string): void {
+    if (selectedTags.value.includes(tag)) {
+      return;
+    }
+
+    selectedTags.value = [
+      ...selectedTags.value,
+      tag,
+    ];
+  }
+
+  function removeTag(tag: string): void {
+    selectedTags.value =
+      selectedTags.value.filter(
+        (selectedTag) => selectedTag !== tag,
+      );
+  }
+
+  function toggleTag(tag: string): void {
+    if (selectedTags.value.includes(tag)) {
+      removeTag(tag);
+
+      return;
+    }
+
+    selectTag(tag);
+  }
 
   return {
     searchTerm,
@@ -107,5 +146,9 @@ export function useDestinationFilter<
     seasons,
     tags,
     filteredDestinations,
+
+    selectTag,
+    removeTag,
+    toggleTag,
   };
 }
