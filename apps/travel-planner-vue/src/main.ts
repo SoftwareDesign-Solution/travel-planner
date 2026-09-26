@@ -1,8 +1,19 @@
 import './styles.css';
-import router from './router';
+import { PiniaColada } from '@pinia/colada';
+import { createPinia } from 'pinia';
 import { createApp } from 'vue';
+
 import App from './app/App.vue';
+import router from './router';
 
 const app = createApp(App);
-app.use(router);
+
+// Pinia
+app.use(createPinia())
+app.use(PiniaColada, {
+    queryOptions: {
+        staleTime: 30_000, // 30 seconds
+    }
+});
+
 app.mount('#root');
