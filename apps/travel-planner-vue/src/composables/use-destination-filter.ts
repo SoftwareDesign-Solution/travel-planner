@@ -112,16 +112,20 @@ export function useDestinationFilter<
         const secondValue =
           secondDestination[sortField.value];
 
-        return firstValue.localeCompare(
+        const result = firstValue.localeCompare(
           secondValue,
           'de',
           {
             sensitivity: 'base',
           },
         );
+
+        return sortDirection.value === 'ascending'
+          ? result
+          : -result;
       },
     );
-    
+
   });
 
   /* Functions */
@@ -153,6 +157,13 @@ export function useDestinationFilter<
     selectTag(tag);
   }
 
+  function toggleSortDirection(): void {
+    sortDirection.value =
+      sortDirection.value === 'ascending'
+        ? 'descending'
+        : 'ascending';
+  }
+
   return {
     searchTerm,
     selectedSeason,
@@ -167,5 +178,6 @@ export function useDestinationFilter<
     selectTag,
     removeTag,
     toggleTag,
+    toggleSortDirection
   };
 }
