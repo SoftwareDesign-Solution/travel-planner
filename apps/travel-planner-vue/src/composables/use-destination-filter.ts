@@ -128,6 +128,14 @@ export function useDestinationFilter<
 
   });
 
+  const hasActiveFilters = computed(() => {
+    return (
+      searchTerm.value.trim() !== '' ||
+      selectedSeason.value !== '' ||
+      selectedTags.value.length > 0
+    );
+  });
+
   /* Functions */
   function selectTag(tag: string): void {
     if (selectedTags.value.includes(tag)) {
@@ -164,6 +172,14 @@ export function useDestinationFilter<
         : 'ascending';
   }
 
+  function resetFilters(): void {
+    searchTerm.value = '';
+    selectedSeason.value = '';
+    selectedTags.value = [];
+    sortField.value = 'title';
+    sortDirection.value = 'ascending';
+  }
+
   return {
     searchTerm,
     selectedSeason,
@@ -174,10 +190,12 @@ export function useDestinationFilter<
     seasons,
     tags,
     filteredDestinations,
+    hasActiveFilters,
 
     selectTag,
     removeTag,
     toggleTag,
-    toggleSortDirection
+    toggleSortDirection,
+    resetFilters
   };
 }
