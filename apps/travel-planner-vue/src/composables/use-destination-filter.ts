@@ -104,7 +104,24 @@ export function useDestinationFilter<
         );
       }) ?? [];
 
-    return [...filteredEntries];
+    return [...filteredEntries].sort(
+      (firstDestination, secondDestination) => {
+        const firstValue =
+          firstDestination[sortField.value];
+
+        const secondValue =
+          secondDestination[sortField.value];
+
+        return firstValue.localeCompare(
+          secondValue,
+          'de',
+          {
+            sensitivity: 'base',
+          },
+        );
+      },
+    );
+    
   });
 
   /* Functions */
