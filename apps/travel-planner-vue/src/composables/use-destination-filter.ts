@@ -1,6 +1,13 @@
 import {
+  computed,
+  type MaybeRefOrGetter,
   ref,
+  toValue,
 } from 'vue';
+
+import type {
+  BaseDestination,
+} from '../schemas/base-destination.schema';
 
 export type DestinationSortField =
   | 'title'
@@ -11,7 +18,13 @@ export type SortDirection =
   | 'ascending'
   | 'descending';
 
-export function useDestinationFilter() {
+export function useDestinationFilter<
+  T extends BaseDestination,
+>(
+  destinations: MaybeRefOrGetter<
+    readonly T[] | undefined
+  >,
+) {
   /* State */
   const searchTerm = ref('');
   const selectedSeason = ref('');
@@ -21,11 +34,52 @@ export function useDestinationFilter() {
   const sortDirection =
     ref<SortDirection>('ascending');
 
+  /* Computed Properties */
+  const seasons = computed<string[]>(() => {
+    const destinationSeasons =
+      toValue(destinations)?.map(
+        (destination) => destination.season,
+      ) ?? [];
+
+    return Array.from(
+      new Set(destinationSeasons),
+    ).sort((firstSeason, secondSeason) =>
+      firstSeason.localeCompare(
+        secondSeason,
+        'de',
+      ),
+    );
+  });
+
+  const tags = computed<string[]>(() => {
+    const destinationTags =
+      toValue(destinations)?.flatMap(
+        (destination) => destination.tags,
+      ) ?? [];
+
+    return Array.from(
+      new Set(destinationTags),
+    ).sort((firstTag, secondTag) =>
+      firstTag.localeCompare(
+        secondTag,
+        'de',
+      ),
+    );
+  });
+
+  const filteredDestinations = computed<T[]>(() => {
+    return [...(toValue(destinations) ?? [])];
+  });
+
   return {
     searchTerm,
     selectedSeason,
     selectedTags,
     sortField,
     sortDirection,
+
+    seasons,
+    tags,
+    filteredDestinations,
   };
 }
