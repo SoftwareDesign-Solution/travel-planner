@@ -16,4 +16,6 @@ app.use(PiniaColada, {
     }
 });
 
+// Router
+app.use(router);
 app.mount('#root');
